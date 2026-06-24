@@ -36,7 +36,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               CustomCard(
                 child: Column(
                   children: [
-                    CustomTextFormVield(
+                    CustomTextFormField(
                       controller: emailController,
                       labelText: 'Email',
                       validator: (value) {

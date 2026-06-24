@@ -9,5 +9,6 @@ class AppColors {
   static const Color kGreyColor = Colors.grey;
   static const Color redColor = Colors.red;
   static final Color kLightGreyColor = Colors.grey[300]!;
+  static final Color kAmberColor = Colors.amber;
 
 }

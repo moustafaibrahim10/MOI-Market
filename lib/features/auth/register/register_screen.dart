@@ -46,7 +46,7 @@ class RegisterScreen extends StatelessWidget {
                     style: AppTextStyles.font18BlackRegular,
                   ),
                   verticalSpace(20.h),
-                  CustomTextFormVield(
+                  CustomTextFormField(
                     labelText: "Name",
                     controller: nameController,
                     validator: (value) {
@@ -57,7 +57,7 @@ class RegisterScreen extends StatelessWidget {
                     },
                   ),
                   verticalSpace(10.h),
-                  CustomTextFormVield(
+                  CustomTextFormField(
                     labelText: "Email",
                     controller: emailController,
                     validator: (value) {
@@ -68,7 +68,7 @@ class RegisterScreen extends StatelessWidget {
                     },
                   ),
                   verticalSpace(10.h),
-                  CustomTextFormVield(
+                  CustomTextFormField(
                     labelText: "Password",
                     controller: passwordController,
                     validator: (value) {
@@ -79,7 +79,7 @@ class RegisterScreen extends StatelessWidget {
                     },
                   ),
                   verticalSpace(10.h),
-                  CustomTextFormVield(
+                  CustomTextFormField(
                     labelText: "Confirm Password",
                     controller: confirmPasswordController,
                     validator: (value) {

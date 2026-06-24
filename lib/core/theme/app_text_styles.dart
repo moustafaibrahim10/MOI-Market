@@ -64,6 +64,19 @@ class AppTextStyles {
     fontWeight: FontWeightHelper.bold,
     color: AppColors.kBlackColor,
   );
+
+  //font20BlackSemiBold
+  static TextStyle font20BlackSemiBold = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeightHelper.semiBold,
+    color: AppColors.kBlackColor,
+  );
+  
+  static TextStyle font20BlackBold = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeightHelper.bold,
+    color: AppColors.kBlackColor,
+  );
   //font24BlackSemiBold
   static TextStyle font24BlackSemiBold = TextStyle(
     fontSize: 24,

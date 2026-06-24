@@ -21,7 +21,7 @@ class EditProfileScreen extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CustomTextFormVield(
+            CustomTextFormField(
               readOnly: true,
               labelText: "Name",
               controller: nameController,
@@ -34,7 +34,7 @@ class EditProfileScreen extends StatelessWidget {
             ),
             verticalSpace(20.0.h),
 
-            CustomTextFormVield(
+            CustomTextFormField(
               readOnly: true,
               labelText: "Email",
               controller: emailController,
@@ -47,7 +47,7 @@ class EditProfileScreen extends StatelessWidget {
             ),
             verticalSpace(20.0.h),
 
-            CustomTextFormVield(
+            CustomTextFormField(
               readOnly: true,
               labelText: "Phone",
               controller: phoneController,

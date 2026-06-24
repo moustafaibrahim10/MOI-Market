@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:market/core/routes/app_router.dart';
 import 'package:market/core/theme/app_theme.dart';
 import 'package:market/features/home/cubit/home_cubit.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load();
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: dotenv.env['SUPABASE_URL']!,
+    publishableKey: dotenv.env['SUPABASE_KEY']!,
+  );
+
   runApp(const MyApp());
 }
 
@@ -19,11 +30,7 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MultiBlocProvider(
-        providers: [
-          BlocProvider(
-            create: (context) => HomeCubit(),
-          ),
-        ],
+        providers: [BlocProvider(create: (context) => HomeCubit())],
         child: MaterialApp.router(
           debugShowCheckedModeBanner: false,
           theme: lightTheme,
